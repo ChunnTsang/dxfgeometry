@@ -40,7 +40,7 @@ class Polyline(CADElement):
         super(Polyline, self).__init__(layer_name)
 
         self._point_precision = point_precision
-        rounded_point_list = preprocessing_point_list(point_list, point_precision)
+        rounded_point_list = preprocessing_point_list(point_list, self._point_precision)
         self._point_list = rounded_point_list
         self._line_list = []
         extra_info = {} if extra_info is None else extra_info

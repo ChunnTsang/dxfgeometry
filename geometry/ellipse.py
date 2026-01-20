@@ -26,12 +26,12 @@ class Ellipse(CADElement):
         super(Ellipse, self).__init__(layer_name)
 
         self._point_precision = point_precision
-        self._x = round(x, point_precision)
-        self._y = round(y, point_precision)
+        self._x = round(x, self._point_precision)
+        self._y = round(y, self._point_precision)
         self._major_axis = major_axis
-        self._start_param = round(start_param, point_precision)
-        self._end_param = round(end_param, point_precision)
-        self._ratio = round(ratio, point_precision)
+        self._start_param = round(start_param, self._point_precision)
+        self._end_param = round(end_param, self._point_precision)
+        self._ratio = round(ratio, self._point_precision)
         self._angle1 = self._end_param * 2 * math.pi
         self._angle2 = self._start_param * 2 * math.pi
         self._rx, self._ry = self._major_axis.magnitude, self._major_axis.magnitude * self._ratio

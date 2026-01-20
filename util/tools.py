@@ -8,6 +8,7 @@ from typing import Optional
 from shapely.geometry import Polygon as ShapelyPolygon
 import numpy as np
 from config import default_point_precision, default_angle_precision, default_min_angle_difference
+from json_geometry.json_base_class import Jsonable
 
 
 def calculate_distance(point1: Optional[list], point2: list):
@@ -68,3 +69,9 @@ def calculate_mid_point(point1: list[float], point2: list[float]):
     x1, y1 = point1[0], point1[1]
     x2, y2 = point2[0], point2[1]
     return [(x1 + x2) / 2, (y1 + y2) / 2]
+
+
+def save_json_file(json_object: Jsonable, json_file_dir: str):
+    with open(json_file_dir, 'w') as f:
+        json_object.save_to_file(f)
+    print(f">>>>>> Saved in '{json_file_dir}' <<<<<<")

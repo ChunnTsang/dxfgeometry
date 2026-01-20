@@ -27,7 +27,7 @@ class Polygon(CADElement):
         super(Polygon, self).__init__(layer_name)
 
         self._point_precision = point_precision
-        point_list = self.preprocessing_point_list(point_list, point_precision)
+        point_list = self.preprocessing_point_list(point_list, self._point_precision)
         self._point_list = point_list
         self._mid_point_list = get_rect_mid_point(self._point_list)
         self._outline_dict = {}

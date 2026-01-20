@@ -76,7 +76,8 @@ class Angle(object):
         if angle == 180:
             angle = 0
 
-        angle = check_approximate_angle(angle, existing_angle_list, min_angle_difference, strong_orthogonality)
+        angle = check_approximate_angle(angle, existing_angle_list, self._min_angle_difference,
+                                        self._strong_orthogonality)
 
         self._angle = angle
         self._angle_in_radius = self._angle * (math.pi / 180)

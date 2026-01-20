@@ -27,8 +27,8 @@ class Line(CADElement):
                  extra_info=None, point_precision: int = default_point_precision) -> None:
         super(Line, self).__init__(layer_name)
         self._point_precision = point_precision
-        x1, y1 = round(x1, point_precision), round(y1, point_precision)
-        x2, y2 = round(x2, point_precision), round(y2, point_precision)
+        x1, y1 = round(x1, self._point_precision), round(y1, self._point_precision)
+        x2, y2 = round(x2, self._point_precision), round(y2, self._point_precision)
 
         extra_info = {} if extra_info is None else extra_info
         self._extra_info = extra_info

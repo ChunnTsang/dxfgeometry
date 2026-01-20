@@ -21,11 +21,11 @@ class Arc(CADElement):
         super(Arc, self).__init__(layer_name)
 
         self._point_precision = point_precision
-        self._x = round(x, point_precision)
-        self._y = round(y, point_precision)
-        self._radius = round(radius, point_precision)
-        self._start_angle = round(start_angle, point_precision)
-        self._end_angle = round(end_angle, point_precision)
+        self._x = round(x, self._point_precision)
+        self._y = round(y, self._point_precision)
+        self._radius = round(radius, self._point_precision)
+        self._start_angle = round(start_angle, self._point_precision)
+        self._end_angle = round(end_angle, self._point_precision)
 
     def get_x(self) -> float:
         return self._x

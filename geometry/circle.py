@@ -19,8 +19,8 @@ class Circle(CADElement):
         super(Circle, self).__init__(layer_name)
 
         self._point_precision = point_precision
-        self._x = round(x, point_precision)
-        self._y = round(y, point_precision)
+        self._x = round(x, self._point_precision)
+        self._y = round(y, self._point_precision)
         self._radius = radius
 
     def get_x(self) -> float:
