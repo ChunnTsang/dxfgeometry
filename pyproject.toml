@@ -1,0 +1,10 @@
+[project]
+name = "dxfgeometry"
+version = "0.1.0"
+description = "A tool for reading dxf files and parsing all primitives by layer classification"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "ezdxf==1.2.0",
+    "shapely==2.0.4",
+]
