@@ -44,7 +44,7 @@ def read_dxf_to_geometry(dxf_file_path: str) -> CADReadResult:
 
     while len(layers_to_read) > 0:
         next_layer_name, next_layer = layers_to_read[0]
-        color = layers_color[next_layer_name.lower()]
+        color = layers_color[next_layer_name]
         new_layer_list = parse_layer(next_layer, next_layer_name, layer_dict, existing_angle_list,
                                      element_with_exception, color)
         layers_to_read.pop(0)

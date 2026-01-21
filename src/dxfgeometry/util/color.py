@@ -263,9 +263,7 @@ color_map = {'1': 'rgb(255,0,0)',
 
 def get_layer_color(doc) -> dict:
     layers_color = {}
-    layers = doc.layers
-    key = list(layers.entries.keys())
-    for i, layer in enumerate(layers):
+    for layer in doc.layers:
         lay_co = layer.color
-        layers_color[key[i]] = color_map[str(lay_co)]
+        layers_color[layer.dxf.name] = color_map[str(lay_co)]
     return layers_color
