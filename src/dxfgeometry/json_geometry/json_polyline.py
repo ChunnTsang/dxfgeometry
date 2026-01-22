@@ -4,9 +4,9 @@
 # Author: ChunTsang <zjun5566@163.com>
 """
 
-from src.dxfgeometry.json_geometry.json_cad_element import JsonCADElement
-from src.dxfgeometry.json_geometry.json_line import JsonLine
-from src.dxfgeometry.geometry.polyline import Polyline
+from dxfgeometry.json_geometry.json_cad_element import JsonCADElement
+from dxfgeometry.json_geometry.json_line import JsonLine
+from dxfgeometry.geometry.polyline import Polyline
 
 
 class JsonPolyline(JsonCADElement):

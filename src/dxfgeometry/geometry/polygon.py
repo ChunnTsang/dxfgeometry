@@ -5,14 +5,14 @@
 """
 
 from typing import Optional
-from src.dxfgeometry.geometry.angle import Angle
-from src.dxfgeometry.geometry.line import Line
-from src.dxfgeometry.geometry.cad_element import CADElement
-from src.dxfgeometry.config import default_point_precision, default_angle_threshold, default_coord_key_precision, \
+from dxfgeometry.geometry.angle import Angle
+from dxfgeometry.geometry.line import Line
+from dxfgeometry.geometry.cad_element import CADElement
+from dxfgeometry.config import default_point_precision, default_angle_threshold, default_coord_key_precision, \
     default_minimum_point_distance
-from src.dxfgeometry.util.tools import calculate_distance, simplify_polygon_vertices, get_angle, get_rect_mid_point
-from src.dxfgeometry.exception.line_exception import LineLengthException
-from src.dxfgeometry.exception.polygon_exception import PolygonTinyAreaException
+from dxfgeometry.util.tools import calculate_distance, simplify_polygon_vertices, get_angle, get_rect_mid_point
+from dxfgeometry.exception.line_exception import LineLengthException
+from dxfgeometry.exception.polygon_exception import PolygonTinyAreaException
 
 
 class Polygon(CADElement):

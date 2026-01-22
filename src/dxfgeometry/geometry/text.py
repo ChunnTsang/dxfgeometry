@@ -4,8 +4,8 @@
 # Author: ChunTsang <zjun5566@163.com>
 """
 
-from src.dxfgeometry.geometry.angle import Angle
-from src.dxfgeometry.geometry.cad_element import CADElement
+from dxfgeometry.geometry.angle import Angle
+from dxfgeometry.geometry.cad_element import CADElement
 
 
 class Text(CADElement):

@@ -5,10 +5,10 @@
 """
 
 import math
-from src.dxfgeometry.geometry.point import Point
+from dxfgeometry.geometry.point import Point
 from typing import Optional
 from shapely.geometry import LineString as ShapelyLineString
-from src.dxfgeometry.config import default_angle_precision, default_min_angle_difference, default_strong_orthogonality, \
+from dxfgeometry.config import default_angle_precision, default_min_angle_difference, default_strong_orthogonality, \
     default_expanded_length, default_point_min_diff
 
 

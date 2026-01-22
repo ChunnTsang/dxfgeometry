@@ -8,23 +8,22 @@ import ezdxf
 import math
 import logging
 from shapely.geometry import LineString as ShapelyLineString
-from util.color import get_layer_color
-from geometry.arc import Arc
-from geometry.ellipse import Ellipse
-from geometry.circle import Circle
-from geometry.text import Text
-from geometry.hatch import Hatch
-from geometry.ortho_hatch import OrthoHatch
-from geometry.line import Line
-from geometry.point import Point
-from geometry.cad_layer import CADLayer
-from geometry.polyline import Polyline
-from geometry.polygon import Polygon
-from geometry.ortho_polygon import OrthoPolygon
-from geometry.cad_result import CADReadResult
-from exception.reader_exception import ReadElementException, handle_exception
-from exception.polygon_exception import PolygonAngleException, PolygonTinyAreaException
-from json_geometry.json_cad_layer import JsonCADLayer
+from dxfgeometry.util.color import get_layer_color
+from dxfgeometry.geometry.arc import Arc
+from dxfgeometry.geometry.ellipse import Ellipse
+from dxfgeometry.geometry.circle import Circle
+from dxfgeometry.geometry.text import Text
+from dxfgeometry.geometry.hatch import Hatch
+from dxfgeometry.geometry.ortho_hatch import OrthoHatch
+from dxfgeometry.geometry.line import Line
+from dxfgeometry.geometry.point import Point
+from dxfgeometry.geometry.cad_layer import CADLayer
+from dxfgeometry.geometry.polyline import Polyline
+from dxfgeometry.geometry.polygon import Polygon
+from dxfgeometry.geometry.ortho_polygon import OrthoPolygon
+from dxfgeometry.geometry.cad_result import CADReadResult
+from dxfgeometry.exception.reader_exception import ReadElementException, handle_exception
+from dxfgeometry.exception.polygon_exception import PolygonAngleException, PolygonTinyAreaException
 
 
 def read_dxf_to_geometry(dxf_file_path: str) -> CADReadResult:

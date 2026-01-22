@@ -4,8 +4,8 @@
 # Author: ChunTsang <zjun5566@163.com>
 """
 
-from src.dxfgeometry.geometry.ortho_polygon import OrthoPolygon
-from src.dxfgeometry.config import default_point_precision
+from dxfgeometry.geometry.ortho_polygon import OrthoPolygon
+from dxfgeometry.config import default_point_precision
 
 
 class OrthoHatch(OrthoPolygon):

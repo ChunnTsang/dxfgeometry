@@ -5,11 +5,11 @@
 """
 
 import math
-from src.dxfgeometry.geometry.point import Point
-from src.dxfgeometry.geometry.angle import Angle
-from src.dxfgeometry.geometry.cad_element import CADElement
-from src.dxfgeometry.config import default_point_precision
-from src.dxfgeometry.exception.line_exception import LineLengthException
+from dxfgeometry.geometry.point import Point
+from dxfgeometry.geometry.angle import Angle
+from dxfgeometry.geometry.cad_element import CADElement
+from dxfgeometry.config import default_point_precision
+from dxfgeometry.exception.line_exception import LineLengthException
 
 
 class Line(CADElement):

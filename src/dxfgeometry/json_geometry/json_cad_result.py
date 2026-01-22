@@ -5,10 +5,10 @@
 """
 
 from json import loads
-from src.dxfgeometry.json_geometry.json_base_class import Jsonable
-from src.dxfgeometry.json_geometry.json_cad_layer import JsonCADLayer, json_cad_layer_to_object
-from src.dxfgeometry.geometry.cad_result import CADReadResult
-from src.dxfgeometry.geometry.cad_layer import CADLayer
+from dxfgeometry.json_geometry.json_base_class import Jsonable
+from dxfgeometry.json_geometry.json_cad_layer import JsonCADLayer, json_cad_layer_to_object
+from dxfgeometry.geometry.cad_result import CADReadResult
+from dxfgeometry.geometry.cad_layer import CADLayer
 
 
 class JsonCADReadResult(Jsonable):

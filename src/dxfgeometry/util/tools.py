@@ -7,8 +7,8 @@ import math
 from typing import Optional
 from shapely.geometry import Polygon as ShapelyPolygon
 import numpy as np
-from src.dxfgeometry.config import default_point_precision, default_angle_precision, default_min_angle_difference
-from src.dxfgeometry.json_geometry.json_base_class import Jsonable
+from dxfgeometry.config import default_point_precision, default_angle_precision, default_min_angle_difference
+from dxfgeometry.json_geometry.json_base_class import Jsonable
 
 
 def calculate_distance(point1: Optional[list], point2: list):

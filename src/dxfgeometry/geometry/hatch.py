@@ -4,8 +4,8 @@
 # Author: ChunTsang <zjun5566@163.com>
 """
 
-from src.dxfgeometry.geometry.polygon import Polygon
-from src.dxfgeometry.config import default_point_precision
+from dxfgeometry.geometry.polygon import Polygon
+from dxfgeometry.config import default_point_precision
 
 
 class Hatch(Polygon):

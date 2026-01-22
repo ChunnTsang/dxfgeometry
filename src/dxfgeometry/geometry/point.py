@@ -4,8 +4,8 @@
 # Author: ChunTsang <zjun5566@163.com>
 """
 
-from src.dxfgeometry.geometry.cad_element import CADElement
-from src.dxfgeometry.config import default_point_precision
+from dxfgeometry.geometry.cad_element import CADElement
+from dxfgeometry.config import default_point_precision
 
 
 class Point(CADElement):

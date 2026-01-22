@@ -4,8 +4,8 @@
 # Author: ChunTsang <zjun5566@163.com>
 """
 
-from src.dxfgeometry.json_geometry.json_cad_element import JsonCADElement
-from src.dxfgeometry.geometry.ortho_hatch import OrthoHatch
+from dxfgeometry.json_geometry.json_cad_element import JsonCADElement
+from dxfgeometry.geometry.ortho_hatch import OrthoHatch
 
 
 class JsonOrthoHatch(JsonCADElement):

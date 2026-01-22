@@ -4,7 +4,7 @@
 # Author: ChunTsang <zjun5566@163.com>
 """
 
-from src.dxfgeometry.geometry.cad_layer import CADLayer
+from dxfgeometry.geometry.cad_layer import CADLayer
 
 
 class CADReadResult:

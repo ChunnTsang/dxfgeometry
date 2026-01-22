@@ -4,7 +4,7 @@
 # Author: ChunTsang <zjun5566@163.com>
 """
 
-from src.dxfgeometry.json_geometry.json_base_class import Jsonable
+from dxfgeometry.json_geometry.json_base_class import Jsonable
 
 
 class JsonCADElement(Jsonable):

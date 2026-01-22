@@ -4,9 +4,9 @@
 # Author: ChunTsang <zjun5566@163.com>
 """
 
-from src.dxfgeometry.geometry.cad_element import CADElement
+from dxfgeometry.geometry.cad_element import CADElement
 import math
-from src.dxfgeometry.config import default_point_precision
+from dxfgeometry.config import default_point_precision
 
 
 class Ellipse(CADElement):

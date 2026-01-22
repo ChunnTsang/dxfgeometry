@@ -4,8 +4,8 @@
 # Author: ChunTsang <zjun5566@163.com>
 """
 
-from src.dxfgeometry.json_geometry.json_cad_element import JsonCADElement
-from src.dxfgeometry.geometry.arc import Arc
+from dxfgeometry.json_geometry.json_cad_element import JsonCADElement
+from dxfgeometry.geometry.arc import Arc
 
 
 class JsonArc(JsonCADElement):

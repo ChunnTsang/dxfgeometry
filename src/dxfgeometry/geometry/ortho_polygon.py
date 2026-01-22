@@ -5,13 +5,13 @@
 """
 
 import math
-from src.dxfgeometry.geometry.line import Line
-from src.dxfgeometry.geometry.polygon import Polygon
-from src.dxfgeometry.geometry.angle import Angle
+from dxfgeometry.geometry.line import Line
+from dxfgeometry.geometry.polygon import Polygon
+from dxfgeometry.geometry.angle import Angle
 from shapely.geometry import Polygon as ShapelyPolygon
 from typing import Optional
-from src.dxfgeometry.exception.polygon_exception import PolygonAngleException
-from src.dxfgeometry.config import default_point_precision
+from dxfgeometry.exception.polygon_exception import PolygonAngleException
+from dxfgeometry.config import default_point_precision
 
 
 class OrthoPolygon(Polygon):

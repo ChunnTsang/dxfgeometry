@@ -4,17 +4,17 @@
 # Author: ChunTsang <zjun5566@163.com>
 """
 
-from src.dxfgeometry.geometry.line import Line
-from src.dxfgeometry.geometry.polygon import Polygon
-from src.dxfgeometry.geometry.ortho_polygon import OrthoPolygon
-from src.dxfgeometry.geometry.text import Text
-from src.dxfgeometry.geometry.ortho_hatch import OrthoHatch
-from src.dxfgeometry.geometry.hatch import Hatch
-from src.dxfgeometry.geometry.point import Point
-from src.dxfgeometry.geometry.circle import Circle
-from src.dxfgeometry.geometry.arc import Arc
-from src.dxfgeometry.geometry.ellipse import Ellipse
-from src.dxfgeometry.geometry.polyline import Polyline
+from dxfgeometry.geometry.line import Line
+from dxfgeometry.geometry.polygon import Polygon
+from dxfgeometry.geometry.ortho_polygon import OrthoPolygon
+from dxfgeometry.geometry.text import Text
+from dxfgeometry.geometry.ortho_hatch import OrthoHatch
+from dxfgeometry.geometry.hatch import Hatch
+from dxfgeometry.geometry.point import Point
+from dxfgeometry.geometry.circle import Circle
+from dxfgeometry.geometry.arc import Arc
+from dxfgeometry.geometry.ellipse import Ellipse
+from dxfgeometry.geometry.polyline import Polyline
 
 
 class CADLayer:

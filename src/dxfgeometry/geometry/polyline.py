@@ -4,9 +4,9 @@
 # Author: ChunTsang <zjun5566@163.com>
 """
 
-from src.dxfgeometry.geometry.cad_element import CADElement
-from src.dxfgeometry.geometry.line import Line
-from src.dxfgeometry.config import default_point_precision
+from dxfgeometry.geometry.cad_element import CADElement
+from dxfgeometry.geometry.line import Line
+from dxfgeometry.config import default_point_precision
 
 
 def preprocessing_point_list(point_list: list[list[float]], point_precision: int):
