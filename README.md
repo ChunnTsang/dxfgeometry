@@ -1,6 +1,6 @@
 # dxfgeometry
 
-[![PyPI - Version](https://img.shields.io/badge/Pypi-v0.1.1-blue)](https://pypi.org/project/dxfgeometry/)
+[![PyPI - Version](https://img.shields.io/badge/Pypi-v0.1.2-blue)](https://pypi.org/project/dxfgeometry/)
 [![PyPI - Python Version](https://img.shields.io/badge/Python-3.10-blue)](https://pypi.org/project/dxfgeometry/)
 
 **dxfgeometry** is a Python library for converting graphic data from `.dxf` CAD files into standard geometric data structures (such as polygons, lines, circles, etc.).
