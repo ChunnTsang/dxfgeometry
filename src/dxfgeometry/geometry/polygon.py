@@ -173,3 +173,21 @@ class Polygon(CADElement):
 
     def get_point_precision(self) -> int:
         return self._point_precision
+
+    def get_x_list(self) -> list[float]:
+        return [point[0] for point in self._point_list]
+
+    def get_y_list(self) -> list[float]:
+        return [point[1] for point in self._point_list]
+
+    def get_min_x(self) -> float:
+        return min(self.get_x_list())
+
+    def get_max_x(self) -> float:
+        return max(self.get_x_list())
+
+    def get_min_y(self) -> float:
+        return min(self.get_y_list())
+
+    def get_max_y(self) -> float:
+        return max(self.get_y_list())
